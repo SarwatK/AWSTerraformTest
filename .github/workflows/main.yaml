@@ -30,7 +30,7 @@ jobs:
  
       - name: Terraform Validate
         run: terraform validate
-        working-directory: AWSTERRAFORMTEST/VPCcreation
+        working-directory: AWSTerraformTest/VPCcreation
  
       - name: Terraform Plan
         run: terraform plan
