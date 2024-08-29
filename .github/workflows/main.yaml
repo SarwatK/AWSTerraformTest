@@ -27,6 +27,7 @@ jobs:
  
       - name: Terraform Init
         run: terraform init
+        working-directory: AWSTerraformTest/VPCcreation
  
       - name: Terraform Validate
         run: terraform validate
