@@ -27,16 +27,16 @@ jobs:
  
       - name: Terraform Init
         run: terraform init
-        working-directory: VPCcreation
+        working-directory: SGCreation
  
       - name: Terraform Validate
         run: terraform validate
-        working-directory: VPCcreation
+        working-directory: SGCreation
  
       - name: Terraform Plan
         run: terraform plan
-        working-directory: VPCcreation
+        working-directory: SGCreation
  
       - name: Terraform Apply
         run: terraform apply -auto-approve
-        working-directory: VPCcreation
+        working-directory: SGCreation
