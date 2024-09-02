@@ -2,7 +2,7 @@
 resource "aws_security_group" "example_sg" {
   name        = "example-sg"
   description = "Example security group created with Terraform"
-  vpc_id      = aws_vpc.example_vpc.id # Ensure you have a VPC defined or replace with an existing VPC ID
+  vpc_id      = "MyVPC"# Ensure you have a VPC defined or replace with an existing VPC ID
 
   # Inbound rules
   ingress {
