@@ -2,7 +2,7 @@
 resource "aws_security_group" "Mysg" {
   name        = "Mysg"
   description = "Example security group created with Terraform"
-  vpc_id      = "MyVPC"# Ensure you have a VPC defined or replace with an existing VPC ID
+  vpc_id      = "vpc-096fe330fb4667fe1"# Ensure you have a VPC defined or replace with an existing VPC ID
 
   # Inbound rules
   ingress {
