@@ -1,6 +1,6 @@
 # Create a security group
-resource "aws_security_group" "example_sg" {
-  name        = "example-sg"
+resource "aws_security_group" "Mysg" {
+  name        = "Mysg"
   description = "Example security group created with Terraform"
   vpc_id      = "MyVPC"# Ensure you have a VPC defined or replace with an existing VPC ID
 
@@ -29,6 +29,6 @@ resource "aws_security_group" "example_sg" {
 
   # Tags (optional)
   tags = {
-    Name = "example-security-group"
+    Name = "MySg"
   }
 }
