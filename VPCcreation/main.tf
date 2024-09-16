@@ -79,7 +79,7 @@ resource "aws_route_table_association" "my_rta_private" {
 }
 
 resource "aws_ec2_transit_gateway_vpc_attachment" "newattach" {
-  transit_gateway_id = aws_ec2_transit_gateway.newattach.id
+  transit_gateway_id = aws_ec2_transit_gateway.newattach
   vpc_id = aws_vpc.my_vpc.id
   subnet_ids = [aws_subnet.my_subnet_public.id]
 
@@ -91,7 +91,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "newattach" {
 
 # Define the Transit Gateway Route Table (if you don't already have one)
 resource "aws_ec2_transit_gateway_route_table" "newrote" {
-  transit_gateway_id = aws_ec2_transit_gateway.newattach.id
+  transit_gateway_id = aws_ec2_transit_gateway.newattach
   tags = {
     Name = "example-tgw-route-table"
   }
